@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SOAL 4</title>
+</head>
+<body>
+  <h2>Apa golongan darahmu?</h2>
+  <input type="text" id="golonganDarahInput" placeholder="Masukkan golongan darah...">
+  <button onclick="tampilkanSifatGolonganDarah()">Tampilkan Sifat Golongan Darah</button>
+
+  <p id="sifatGolonganDarah"></p>
+
+  <script>
+    function tampilkanSifatGolonganDarah() {
+      const golonganDarah = document.getElementById('golonganDarahInput').value.toUpperCase();
+      let sifatGolonganDarahEl = document.getElementById('sifatGolonganDarah');
+
+      switch (golonganDarah) {
+        case 'A':
+          sifatGolonganDarahEl.textContent = "Identik dengan sifatnya yang terorganisir, kritis, tenang dalam menghadapi masalah.";
+          break;
+        case 'B':
+          sifatGolonganDarahEl.textContent = "Semangat yang tinggi, aktif, kreatif, dan selalu ingin tahu.";
+          break;
+        case 'AB':
+          sifatGolonganDarahEl.textContent = "Memiliki karakter yang kritis, rasional, bertanggung jawab, suka menolong, dan mudah beradaptasi.";
+          break;
+        case 'O':
+          sifatGolonganDarahEl.textContent = "Sikapnya yang mudah beradaptasi dengan lingkungan baru atau easy going.";
+          break;
+        default:
+          sifatGolonganDarahEl.textContent = "Golongan darah tidak valid. Silakan masukkan golongan darah A, B, AB, atau O.";
+      }
+    }
+  </script>
+</body>
+</html>

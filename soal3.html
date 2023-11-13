@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SOAL 3</title>
+</head>
+<body>
+  <h2>Data Negara</h2>
+  <button onclick="tampilkanData()">Tampilkan Data</button>
+
+  <p id="dataNegara"></p>
+
+  <script>
+    // Array dengan nama negara
+    let negara = ['Indonesia', 'Malaysia', 'Singapura', 'Thailand', 'Vietnam', 'Filipina', 'Brunei', 'Laos', 'Myanmar', 'Kamboja', 'Palestina', 'Arab Saudi', 'France', 'Switzerland', 'Belanda'];
+
+    function tampilkanData() {
+      const dataNegaraEl = document.getElementById('dataNegara');
+      let data = '<strong>Data Negara:</strong><br>';
+
+      // Menampilkan seluruh data negara
+      negara.forEach((item, index) => {
+        data += `${index + 1}. ${item}<br>`;
+      });
+
+      // Menambahkan data negara baru
+      negara.push('Korea');
+
+      dataNegaraEl.innerHTML = data;
+      dataNegaraEl.innerHTML += `<br><strong>Indonesia berada pada indeks ke-${negara.indexOf('Indonesia') + 1}</strong>`;
+      dataNegaraEl.innerHTML += `<br>Data Negara setelah ditambahkan: ${negara}`;
+    }
+  </script>
+</body>
+</html>
+
+</body>
+</html>

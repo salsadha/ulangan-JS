@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SOAL 5</title>
+  <style>
+    body {
+      background-color: white;
+    }
+    .green-bg {
+      background-color: green;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <p id="text" onclick="ubahKalimat()">Saya merasa belum bisa belajar JavaScript</p>
+
+  <script>
+    function ubahKalimat() {
+      let text = document.getElementById('text');
+      text.innerHTML = 'Ternyata saya masih kurang berlatih belajar JavaScript';
+      text.classList.add('green-bg');
+    }
+  </script>
+</body>
+</html>

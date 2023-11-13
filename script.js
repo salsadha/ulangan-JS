@@ -1,0 +1,1 @@
+alert('Tak banyak bicara, bercerita lewat tulisan, Halo semua aku Salsa Terima Kasih!');
